@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register for TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Register for TechCon 2024</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Shedule</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-       <form action="">
-        <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" >
-        <label for="eamil">Email</label>
-        <input type="email" name="email" id="email">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <input type="checkbox" name="terms" id="terms">
-        <label for="terms">You must agree with terms and conditions</label>
-        <button type="submit">Register Now</button>
-       </form> 
+        <section>
+            <h2>Attendee Registration Form</h2>
+            <p>Please complete the form below to register for TechCon 2024.</p>
+
+            <form action="#" method="post">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div>
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Register Now</button>
+                </div>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; TechCon 2024 copyright</p>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
     </footer>
 </body>
 </html>
